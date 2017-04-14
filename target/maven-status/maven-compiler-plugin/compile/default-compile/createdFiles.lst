@@ -1,0 +1,6 @@
+ua\myfirstcrud\manager\dao\UserDaoImpl.class
+ua\myfirstcrud\manager\model\User.class
+ua\myfirstcrud\manager\service\UserService.class
+ua\myfirstcrud\manager\service\UserServiceImpl.class
+ua\myfirstcrud\manager\controller\UserController.class
+ua\myfirstcrud\manager\dao\UserDao.class
