@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "user")
+@Table(name = "user_table")
 
 /**
  * Created by ace on 3/15/2017.
@@ -19,14 +19,11 @@ public class User {
     @Column(name = "name")
     private String name;
 
+    @Column(name = "surname")
+    private String surname;
+
     @Column(name = "age")
     private int age;
-
-    @Column(name = "isAdmin")
-    private boolean isAdmin;
-
-    @Column(name = "createDate")
-    private Date createDate;
 
     public int getId() {
         return id;
@@ -48,20 +45,12 @@ public class User {
         this.age = age;
     }
 
-    public boolean isAdmin() {
-        return isAdmin;
+    public String getSurname() {
+        return surname;
     }
 
-    public void setAdmin(boolean admin) {
-        isAdmin = admin;
-    }
-
-    public Date getCreateDate() {
-        return createDate;
-    }
-
-    public void setCreateDate(Date createDate) {
-        this.createDate = createDate;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     @Override
@@ -69,9 +58,8 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", age=" + age +
-                ", isAdmin=" + isAdmin +
-                ", createDate=" + createDate +
+                ", age=" + surname +
+                ", isAdmin=" + age +
                 '}';
     }
 }

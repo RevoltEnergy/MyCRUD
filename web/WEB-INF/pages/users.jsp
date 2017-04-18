@@ -66,8 +66,8 @@
         <tr>
             <th width="80">ID</th>
             <th width="120">Name</th>
+            <th width="120">Surname</th>
             <th width="120">Age</th>
-            <th width="120">isAdmin</th>
             <th width="60">Edit</th>
             <th width="60">Delete</th>
         </tr>
@@ -75,8 +75,8 @@
             <tr>
                 <td>${user.id}</td>
                 <td><a href="/userdata/${user.id}" target="_blank">${user.name}</a></td>
+                <td>${user.surname}</td>
                 <td>${user.age}</td>
-                <td>${user.admin}</td>
                 <td><a href="<c:url value='/edit/${user.id}'/>">Edit</a></td>
                 <td><a href="<c:url value='/remove/${user.id}'/>">Delete</a></td>
             </tr>
@@ -98,7 +98,7 @@
                 </td>
                 <td>
                     <form:input path="id" readonly="true" size="8" disabled="true"/>
-                        <%--<form:hidden path="id"/>--%>
+                    <form:hidden path="id"/>
                 </td>
             </tr>
         </c:if>
@@ -114,12 +114,12 @@
         </tr>
         <tr>
             <td>
-                <form:label path="age">
-                    <spring:message text="Age"/>
+                <form:label path="surname">
+                    <spring:message text="Surname"/>
                 </form:label>
             </td>
             <td>
-                <form:input path="age"/>
+                <form:input path="surname"/>
             </td>
         </tr>
         <tr>
@@ -129,7 +129,7 @@
                 </form:label>
             </td>
             <td>
-                <form:input path="admin"/>
+                <form:input path="age"/>
             </td>
         </tr>
         <tr>

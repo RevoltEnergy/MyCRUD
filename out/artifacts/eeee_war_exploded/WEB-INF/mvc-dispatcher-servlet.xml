@@ -47,7 +47,7 @@
     </bean>
 
     <bean id="userService" class="ua.myfirstcrud.manager.service.UserServiceImpl">
-        <property name="UserDao" ref="userDao"/>
+        <property name="userDao" ref="userDao"/>
     </bean>
 
     <context:component-scan base-package="ua.myfirstcrud.manager"/>

@@ -25,14 +25,14 @@ public class UserDaoImpl implements UserDao{
 
     public void addUser(User user) {
         Session session = this.sessionFactory.getCurrentSession();
-        session.update(user);
-        logger.info("User was successfully updated. User details: " + user);
+        session.persist(user);
+        logger.info("User was successfully added. User details: " + user);
     }
 
     public void updateUser(User user) {
         Session session = this.sessionFactory.getCurrentSession();
-        session.persist(user);
-        logger.info("User was successfully added. User details: " + user);
+        session.update(user);
+        logger.info("User was successfully updated. User details: " + user);
     }
 
     public void removeUser(int id) {

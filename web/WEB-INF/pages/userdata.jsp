@@ -62,14 +62,14 @@
     <tr>
         <th width="80">ID</th>
         <th width="120">Name</th>
+        <th width="120">Surname</th>
         <th width="120">Age</th>
-        <th width="120">isAdmin</th>
     </tr>
     <tr>
         <td>${user.id}</td>
         <td>${user.name}</td>
+        <td>${user.surname}</td>
         <td>${user.age}</td>
-        <td>${user.admin}</td>
     </tr>
 </table>
 </body>
