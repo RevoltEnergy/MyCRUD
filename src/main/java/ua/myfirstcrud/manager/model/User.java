@@ -1,7 +1,11 @@
 package ua.myfirstcrud.manager.model;
 
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import javax.persistence.*;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
@@ -24,6 +28,14 @@ public class User {
 
     @Column(name = "age")
     private int age;
+
+    @Column(name = "isAdmin")
+    private String isAdmin;
+
+    @Column(name = "createDate")
+    @UpdateTimestamp
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date createDate;
 
     public int getId() {
         return id;
@@ -57,6 +69,24 @@ public class User {
         this.surname = surname;
     }
 
+    public void setIsAdmin(String isAdmin) {
+        this.isAdmin = isAdmin;
+    }
+
+    public String getIsAdmin() {
+        return isAdmin;
+    }
+
+    @PreUpdate
+    @PrePersist
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -64,6 +94,8 @@ public class User {
                 ", name='" + name + '\'' +
                 ", surname=" + surname +
                 ", age=" + age +
+                ", isAdmin=" + isAdmin +
+                ", createDate=" + createDate +
                 '}';
     }
 }
