@@ -143,7 +143,7 @@
                 </form:label>
             </td>
             <td>
-                <form:input path="isAdmin"/>
+                <form:checkbox path="isAdmin"/>
             </td>
         </tr>
         <tr>

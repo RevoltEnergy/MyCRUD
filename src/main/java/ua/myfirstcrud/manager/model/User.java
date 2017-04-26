@@ -30,7 +30,7 @@ public class User {
     private int age;
 
     @Column(name = "isAdmin")
-    private String isAdmin;
+    private boolean isAdmin;
 
     @Column(name = "createDate")
     @UpdateTimestamp
@@ -69,11 +69,11 @@ public class User {
         this.surname = surname;
     }
 
-    public void setIsAdmin(String isAdmin) {
+    public void setIsAdmin(boolean isAdmin) {
         this.isAdmin = isAdmin;
     }
 
-    public String getIsAdmin() {
+    public boolean getIsAdmin() {
         return isAdmin;
     }
 
