@@ -1,0 +1,60 @@
+table.tg {
+    margin-left:auto;
+    margin-right:auto;
+    font: 12px Arial, Helvetica, sans-serif;
+    /*font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 14px;*/
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+}
+table.tg th {
+    background: #BCEBDD;
+    color: white;
+    text-shadow: 0 1px 1px #2D2020;
+    padding: 10px 20px;
+}
+table.tg th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+table.tg th:first-child, td:first-child {
+    text-align: left;
+}
+table.tg th:first-child {
+    border-top-left-radius: 10px;
+}
+table.tg th:last-child {
+    border-top-right-radius: 10px;
+    border-right: none;
+}
+table.tg td {
+    padding: 10px 20px;
+    background: #d2f5ff;
+    /*background: #F8E391;*/
+}
+table.tg tr:last-child td:first-child {
+    border-radius: 0 0 0 10px;
+}
+table.tg tr:last-child td:last-child {
+    border-radius: 0 0 10px 0;
+}
+table.tg tr td:last-child {
+    border-right: none;
+}
+
+table.tg .button{
+    padding: 10px 20px 10px 20px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+
+}
+table.tg .button:hover{
+    background: #3EB1DD;
+}

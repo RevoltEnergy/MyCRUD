@@ -40,7 +40,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Transactional
-    public List<User> listUsers() {
-        return this.userDao.listUsers();
+    public List<User> listUsers(String searchValue) {
+        return this.userDao.listUsers(searchValue);
     }
 }

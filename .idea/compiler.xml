@@ -10,9 +10,8 @@
         <module name="MyFirstCRUD" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="eeee" target="1.5" />
-      <module name="MyFirstCRUD" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="MyFirstCRUD" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -30,6 +30,6 @@ CREATE TABLE `user_table` (
 
 LOCK TABLES `user_table` WRITE;
 /*!40000 ALTER TABLE `user_table` DISABLE KEYS */;
-INSERT INTO `user_table` VALUES (1,'Jack','Deniels',200,1,NOW()),(2,'John','Walker',150,0,NOW()),(3,'Jim','Beam',100,0,NOW());
+INSERT INTO `user_table` VALUES (1,'Jack','Deniel',200,1,NOW()),(2,'John','Walker',150,0,NOW()),(3,'Jim','Beam',100,0,NOW());
 /*!40000 ALTER TABLE `user_table` ENABLE KEYS */;
 UNLOCK TABLES;

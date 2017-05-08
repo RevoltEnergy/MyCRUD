@@ -1,11 +1,9 @@
 package ua.myfirstcrud.manager.model;
 
-import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 
-import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
@@ -36,6 +34,7 @@ public class User {
     @UpdateTimestamp
     @Temporal(TemporalType.TIMESTAMP)
     private Date createDate;
+
 
     public int getId() {
         return id;
@@ -97,5 +96,9 @@ public class User {
                 ", isAdmin=" + isAdmin +
                 ", createDate=" + createDate +
                 '}';
+    }
+
+    public String getSearchUser() {
+        return "";
     }
 }

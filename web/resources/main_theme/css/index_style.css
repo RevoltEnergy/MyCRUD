@@ -1,0 +1,27 @@
+h1 {
+    color : #7d88b7;
+    display:table;
+    margin:auto -50px;
+}
+#begin_form {
+    background-color: transparent;
+    margin:auto;
+}
+#begin_button {
+    padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+}
+#begin_button:hover {
+    background: #3EB1DD;
+}
+#footer_index {
+    color : #87aec2;
+    display:table;
+    margin:auto;
+}

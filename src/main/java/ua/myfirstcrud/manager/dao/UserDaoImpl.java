@@ -2,9 +2,11 @@ package ua.myfirstcrud.manager.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestParam;
 import ua.myfirstcrud.manager.model.User;
 
 import java.util.List;
@@ -51,10 +53,15 @@ public class UserDaoImpl implements UserDao{
         return user;
     }
 
-    @SuppressWarnings("unchecked & palevo")
-    public List<User> listUsers() {
+    @SuppressWarnings("unchecked")
+    public List<User> listUsers(String searchValue) {
         Session session = this.sessionFactory.getCurrentSession();
-        List<User> userList = session.createQuery("from User").list();
+        String queryLine = searchValue != null ?
+                (searchValue.isEmpty() ? "from User" : "from User where surname = :value")
+                : "from User";
+        Query query = session.createQuery(queryLine);
+        if (queryLine.contains(":value")) query.setParameter("value", searchValue);
+        List<User> userList = query.list();
 
         for (User user : userList) {
             logger.info("User list: " + user);

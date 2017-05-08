@@ -1,0 +1,29 @@
+h1 {
+    color : rgba(81, 179, 190, 0.98);
+    text-align: center;
+}
+#back_form {
+    background-color: transparent;
+    display:table;
+    margin:auto;
+}
+#back_button {
+    padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+}
+#back_button:hover {
+    background: #3EB1DD;
+}
+#footer_users {
+    color : #0000ac;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
